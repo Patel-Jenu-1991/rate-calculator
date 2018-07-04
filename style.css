@@ -1,11 +1,12 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
 body {
-  background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+  background: linear-gradient(to bottom, #7d7e7d 0%, #0e0e0e 100%);
   color: rgba(255, 255, 255, 1);
 }
 
@@ -28,17 +29,26 @@ header h2 {
   font-size: 4em;
 }
 
-input[type="text"], input[type="number"] {
+input[type="text"],
+input[type="number"] {
+  background: linear-gradient(
+    to bottom,
+    #f6f8f9 0%,
+    #e5ebee 50%,
+    #d7dee3 51%,
+    #f5f7f9 100%
+  );
   border: 0.2em ridge rgba(192, 192, 192, 1);
   font-family: monospace, serif;
-  font-size: 2em;
+  font-size: 2.1em;
   font-weight: bold;
   text-align: center;
-  text-shadow: 0.05em 0.05em rgba(0, 0, 0, 0.7);
+  text-shadow: 0.05em 0.05em rgba(192, 192, 192, 1);
 }
 
-#resultBox input[type="text"] {
-  background-color: rgba(240, 240, 240, 0.9);
+#rateBox label {
+  font-size: 2em;
+  font-weight: bold;
 }
 
 #resultBox label {
@@ -59,11 +69,13 @@ input[type="text"], input[type="number"] {
   text-shadow: 0.2em 0.2em rgba(0, 0, 0, 0.5);
 }
 
-#rateBox h3, #resultBox h3 {
+#rateBox h3,
+#resultBox h3 {
   font-size: 3em;
 }
 
-#rateBox, #resultBox {
+#rateBox,
+#resultBox {
   border-radius: 5em;
   text-align: center;
 }
