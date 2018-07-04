@@ -1,0 +1,73 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+  color: rgba(255, 255, 255, 1);
+}
+
+header {
+  color: rgba(240, 240, 240, 1);
+  font-family: serif, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0.2em 0.2em rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+  font-size: 6em;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+header h2 {
+  font-size: 4em;
+}
+
+input[type="text"], input[type="number"] {
+  border: 0.2em ridge rgba(192, 192, 192, 1);
+  font-family: monospace, serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0.05em 0.05em rgba(0, 0, 0, 0.7);
+}
+
+#resultBox input[type="text"] {
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+#resultBox label {
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+}
+
+.box {
+  color: rgba(200, 200, 200, 1);
+  font-family: monospace, serif;
+  float: left;
+  letter-spacing: 0.1em;
+  padding: 2em;
+  width: 45%;
+  text-shadow: 0.2em 0.2em rgba(0, 0, 0, 0.5);
+}
+
+#rateBox h3, #resultBox h3 {
+  font-size: 3em;
+}
+
+#rateBox, #resultBox {
+  border-radius: 5em;
+  text-align: center;
+}
+
+.block {
+  margin: 0.5em;
+}
