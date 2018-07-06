@@ -7,9 +7,9 @@ rateBox.addEventListener("input", () => updateResults());
  */
 const updateResults = () => {
   let dom = getDOM();
-  (totalAmt = parseFloat(Math.round(dom.rateBox.value * 100) / 100).toFixed(2)),
-    (tax = getTaxes(parseFloat(totalAmt))),
-    (rate = getRate(parseFloat(totalAmt)));
+  totalAmt = Number(Math.round(dom.rateBox.value * 100) / 100).toFixed(2),
+  tax = getTaxes(totalAmt),
+  rate = getRate(totalAmt);
 
   dom.roomRate.value = rate;
   dom.taxes.value = tax;
@@ -22,7 +22,7 @@ const updateResults = () => {
  * @returns {string} The room rate rounded off to 2 decimal places
  */
 const getTaxes = total => {
-  return (parseFloat(total) - parseFloat(getRate(total))).toFixed(2);
+  return (Number(total) - Number(getRate(total))).toFixed(2);
 };
 
 /*
@@ -32,7 +32,7 @@ const getTaxes = total => {
  */
 const getRate = total => {
   const TAX_RATE = 1.15; // state 6.00% + county 9.00 = 15.00%
-  return parseFloat(total / TAX_RATE).toFixed(2);
+  return Number(total / TAX_RATE).toFixed(2);
 };
 
 /*

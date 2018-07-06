@@ -31,6 +31,34 @@ header h2 {
 
 input[type="text"],
 input[type="number"] {
+  border: 0.2em ridge rgba(192, 192, 192, 1);
+  font-family: monospace, serif;
+  font-size: 2.1em;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0.05em 0.05em rgba(192, 192, 192, 1);
+}
+
+small {
+  color: rgba(220, 220, 220, 1);
+  line-height: 1.6;
+  text-shadow: 0.05em 0.05em rgba(0, 0, 0, 1);
+}
+
+footer {
+  bottom: 0;
+  color: rgba(220, 220, 220, 1);
+  font-family: sans-serif, serif;
+  left: 0;
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0.05em 0.05em rgba(165, 165, 165, 0.5);
+  width: 100%;
+}
+
+#rate {
   background: linear-gradient(
     to bottom,
     #f6f8f9 0%,
@@ -38,12 +66,16 @@ input[type="number"] {
     #d7dee3 51%,
     #f5f7f9 100%
   );
-  border: 0.2em ridge rgba(192, 192, 192, 1);
-  font-family: monospace, serif;
-  font-size: 2.1em;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 0.05em 0.05em rgba(192, 192, 192, 1);
+}
+
+#roomRate, #taxes, #total {
+  background: linear-gradient(
+  to bottom,
+  #ffffff 0%,
+  #f1f1f1 50%,
+  #e1e1e1 51%,
+  #f6f6f6 100%
+);
 }
 
 #rateBox label {
@@ -60,7 +92,7 @@ input[type="number"] {
 }
 
 .box {
-  color: rgba(200, 200, 200, 1);
+  color: rgba(240, 240, 240, 1);
   font-family: monospace, serif;
   float: left;
   letter-spacing: 0.1em;
@@ -71,7 +103,9 @@ input[type="number"] {
 
 #rateBox h3,
 #resultBox h3 {
+  color: rgba(200, 200, 200, 1);
   font-size: 3em;
+  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
 }
 
 #rateBox,
