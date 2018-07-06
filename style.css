@@ -68,14 +68,16 @@ footer {
   );
 }
 
-#roomRate, #taxes, #total {
+#roomRate,
+#taxes,
+#total {
   background: linear-gradient(
-  to bottom,
-  #ffffff 0%,
-  #f1f1f1 50%,
-  #e1e1e1 51%,
-  #f6f6f6 100%
-);
+    to bottom,
+    #ffffff 0%,
+    #f1f1f1 50%,
+    #e1e1e1 51%,
+    #f6f6f6 100%
+  );
 }
 
 #rateBox label {

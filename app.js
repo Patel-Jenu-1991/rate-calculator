@@ -7,9 +7,9 @@ rateBox.addEventListener("input", () => updateResults());
  */
 const updateResults = () => {
   let dom = getDOM();
-  totalAmt = Number(Math.round(dom.rateBox.value * 100) / 100).toFixed(2),
-  tax = getTaxes(totalAmt),
-  rate = getRate(totalAmt);
+  (totalAmt = Number(Math.round(dom.rateBox.value * 100) / 100).toFixed(2)),
+    (tax = getTaxes(totalAmt)),
+    (rate = getRate(totalAmt));
 
   dom.roomRate.value = rate;
   dom.taxes.value = tax;
